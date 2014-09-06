@@ -1,0 +1,9 @@
+<template name="request">
+  <h3><a href="{{pathFor 'requestPage'}}">{{username}} requests {{genre}} music similar to:</a></h3>
+  <ol>
+    {{#each bands}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ol>
+  <div>{{comments}}</div>
+</template>

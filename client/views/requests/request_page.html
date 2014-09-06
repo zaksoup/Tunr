@@ -1,0 +1,15 @@
+<template name="requestPage">
+
+  {{> request}}
+
+  {{#each suggestions}}
+    {{> suggestion}}
+  {{/each}}
+
+  <h6>submit a suggestion!</h6>
+
+  {{#if currentUser}}
+    {{> suggestionForm}}
+  {{/if}}
+
+</template>

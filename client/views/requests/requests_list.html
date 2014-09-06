@@ -1,0 +1,15 @@
+<template name="requestsList">
+  
+  {{#if currentUser}}
+    {{> requestForm}}
+  {{/if}}
+
+  <div>requests</div>
+
+  {{#each requests}}
+    <ul>
+      <li>{{> request}}</li>
+    </ul>
+  {{/each}}
+
+</template>

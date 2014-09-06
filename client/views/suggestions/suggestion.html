@@ -1,0 +1,14 @@
+<template name="suggestion">
+
+<h4>{{username}} suggests you listen to: ({{points}})</h4>
+  <ol>
+    {{#each albums}}
+      <li><span class="title">{{album}}</span> by <span class="artist">{{band}}</span></li>
+    {{/each}}
+  </ol>
+  <p>{{comments}}</p>
+  {{#if currentUser}}
+    <a href="#" class="like" data-id="{{_id}}">👍</a>
+  {{/if}}
+
+</template>
